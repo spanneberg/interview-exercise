@@ -18,19 +18,19 @@ cd testdata
 
 ```
 cd bash
-./run ../testdata/1000-items.txt 10
+./run.sh ../testdata/1000-items.txt 10
 ```
 
 # Java implementation
 
 ```
 cd java
-./run ../testdata/1000-items.txt 10
+./run.sh ../testdata/1000-items.txt 10
 ```
 
 # Go implementation
 
 ```
 cd go
-./run ../testdata/1000-items.txt 10
+./run.sh ../testdata/1000-items.txt 10
 ```
