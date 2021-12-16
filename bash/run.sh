@@ -14,4 +14,4 @@ if [ ! -f $INPUT_FILE ]; then
   exit 1
 fi
 
-sort -k2 -n $INPUT_FILE | tail -n $OUTPUT_LINES | awk '{ print $1 }'
+sort -k2 -nr $INPUT_FILE | head -n $OUTPUT_LINES | awk '{ print $1 }'

@@ -50,7 +50,11 @@ func main() {
         }
     }
 
-    fmt.Println(values)
+    sort.Slice(values, func(i, j int) bool { return values[i] > values[j] })
+
+    for _, val := range values {
+        fmt.Println(result[val])
+    }
 
     if err := scanner.Err(); err != nil {
         log.Fatal(err)
